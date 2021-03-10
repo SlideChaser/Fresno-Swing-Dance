@@ -1,0 +1,70 @@
+/* Grid Classes */
+/* All of the grid related changes */
+
+.grid
+{
+    display: grid;
+    grid-template-columns: 100px 50px auto 50px 40px;
+    grid-template-rows: 100px 100rem auto;
+    grid-gap: 10px;
+}
+
+.banner
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    height: 5rem;
+    background-color: rgba(100, 100, 100, .5);
+    border-radius: .4rem;
+    margin-top: 1rem;
+}
+
+.nav
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: white;
+    justify-self: right;
+    margin-top: 1rem;
+}
+
+.logo 
+{
+    height: 100px;
+    width: 100px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* Element Styling */
+/* This is where I make non grid related style edits */
+
+body
+{
+    margin: 2rem;
+    font: 12px system-ui;
+}
+
+li
+{
+    list-style: none;
+    margin: 10px 20px 20px 20px;
+    display: inline-block;
+}
+
+a
+{
+    color: black;
+    padding: 4px;
+    text-decoration: none;
+}
+
+a:hover
+{
+    background-color: #aaaaaa;
+    border-radius: .3rem;
+    padding: 4px;
+}
