@@ -9,6 +9,8 @@
     grid-gap: 10px;
 }
 
+/* Nav Bar Components */
+
 .banner
 {
     grid-column-start: 3;
@@ -35,6 +37,18 @@
     top:  25px;
 }
 
+/* Pictures */
+
+.random
+{
+    height: 100px;
+    width: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    position: sticky;
+    top: 10px;
+}
+
 .logo 
 {
     height: 100px;
@@ -43,6 +57,22 @@
     grid-row: 1;
     position: sticky;
     top: 10px;
+}
+
+.upper-body-picture
+{
+    /* Crop */
+    object-fit: cover;
+    object-position: 0px -100px;
+    height: 20rem;
+    width: 50rem;
+    /* Grid Position */
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: center;
+    /* Styling */
+    border-radius: 3rem;
+    box-shadow: #999999 10px 10px 10px;
 }
 
 /* Element Styling */
