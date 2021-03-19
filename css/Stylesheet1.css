@@ -1,3 +1,6 @@
+/* Grid Components */
+/* ********************** */
+
 .grid
 {
     width: 90vw;
@@ -30,6 +33,7 @@
     margin: 2px;
 
     position: sticky;
+
 }
 
 .content
@@ -39,9 +43,33 @@
     display: flex;
 
     justify-content: center;
+
+    margin-top: 1rem;
 }
 
-/* ******************* */
+/* End Grid Components */
+/* ********************** */
+
+
+/* Nav Bar */
+/* ********************** */
+
+.nav-links
+{
+    margin-right: 2rem;
+}
+
+.nav-links ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li
+{
+    display: inline-block;
+}
 
 .logo
 {
@@ -68,24 +96,45 @@
     margin: 5px;
 }
 
-.banner h1
+a
 {
-    margin-left: 2rem;
+    text-decoration: none;
+    color: black;
+    padding: .1rem;
+    margin-right: .5rem;
 }
 
-.nav-links
+a:hover
 {
-    margin-right: 2rem;
+    background-color: rgba(200, 200, 200, .5);
+    border-radius: .4rem;
+    padding: .1rem;
+
 }
 
-.nav-links ul
+h1
 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-left: 1rem;
 }
 
-.nav-links ul li
+/* End Nav Bar */
+/* ********************** */
+
+/* Tag Styles */
+/* ********************** */
+
+h2, p
 {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+p
+{
+    margin: 0px 4rem 0px 4rem;
+}
+
+.content > img
+{
+    border-radius: 2rem;
 }
