@@ -42,7 +42,11 @@
     
     display: flex;
 
-    justify-content: center;
+    flex-direction: column;
+
+    /* justify-content: center; */
+
+    justify-self: center;
 
     margin-top: 1rem;
 }
@@ -90,7 +94,7 @@
 
     justify-content: space-between;
 
-    background-color: rgba(100, 100, 100, .5);
+    background-color: #fdf1d9;
     border-radius: 2rem;
 
     margin: 5px;
@@ -102,6 +106,14 @@ a
     color: black;
     padding: .1rem;
     margin-right: .5rem;
+}
+
+#current-page
+{
+    background-color: #880838;
+    border-radius: .1rem;
+    padding: .2rem .2rem .3rem .2rem;
+    color: white;
 }
 
 a:hover
@@ -117,12 +129,7 @@ h1
     margin-left: 1rem;
 }
 
-#current-page
-{
-    background-color: rgba(200, 200, 200, .5);
-    border-radius: .4rem;
-    padding: .1rem;
-}
+
 
 /* End Nav Bar */
 /* ********************** */
