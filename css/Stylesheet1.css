@@ -44,9 +44,7 @@
 
     flex-direction: column;
 
-    /* justify-content: center; */
-
-    justify-self: center;
+    justify-content: center;
 
     margin-top: 1rem;
 }
@@ -94,18 +92,27 @@
 
     justify-content: space-between;
 
-    background-color: #fdf1d9;
-    border-radius: 2rem;
+    background-color: #aaaaaa;
+    border-radius: 1rem;
 
     margin: 5px;
 }
 
-a
+.banner a
 {
     text-decoration: none;
     color: black;
-    padding: .1rem;
-    margin-right: .5rem;
+    padding: .2rem .2rem .3rem .2rem;
+    margin: 1rem;
+}
+
+.banner a:hover
+{
+    background-color: #880838;
+    border-radius: .1rem;
+    padding: .2rem .2rem .3rem .2rem;
+    color: white;
+
 }
 
 #current-page
@@ -116,13 +123,6 @@ a
     color: white;
 }
 
-a:hover
-{
-    background-color: rgba(200, 200, 200, .5);
-    border-radius: .4rem;
-    padding: .1rem;
-
-}
 
 h1
 {
@@ -139,16 +139,29 @@ h1
 
 h2, p
 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    width: 80%;
 }
 
-p
+
+.content > ul li
 {
-    margin: 0px 4rem 0px 4rem;
+    margin: 0px auto 0px auto;
+    width: 80%;
+}
+
+/* can't seem to apply the same settings above to a tags without seperating it? */
+.content a
+{
+    margin: 0px auto 0px auto;
+    width: 80%;
 }
 
 .content > img
 {
-    border-radius: 2rem;
+    border-radius: .3rem;
+    width: 80%;
+    height: auto;
+    margin: 4rem auto 4rem auto;
 }
