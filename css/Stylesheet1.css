@@ -85,10 +85,12 @@
     flex-direction: column;
 
     /* I want everything to be in the center of the page ;P */
-    justify-content: center;
+    align-items: center;
 
     /* Keeps it off the nav bar a bit :) */
     margin-top: 1rem;
+
+    width: 100vw;
 }
 
 /* End Grid Components */
@@ -201,32 +203,32 @@ h1
 /* Tag Styles */
 /* ********************** */
 
-h2, p
+/* h2, p
 {
     text-align: center;
     margin: 0px auto 0px auto;
     width: 80%;
-}
+} */
 
 /* Generally ask about the syntax of child, adjacent, and mixing them together */
 
-.content > ul li
+.content > ul li, .content a
 {
     margin: 0px auto 0px auto;
     width: 80%;
 }
 
 /* can't seem to apply the same settings above to a tags without seperating it? */
-.content a
+/* .content a
 {
     margin: 0px auto 0px auto;
     width: 80%;
-}
+} */
 
 .content > img
 {
     border-radius: .3rem;
     width: 80%;
     height: auto;
-    margin: 4rem auto 4rem auto;
+    /* margin: 4rem auto 4rem auto; */
 }
