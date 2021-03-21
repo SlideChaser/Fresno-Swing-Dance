@@ -13,7 +13,7 @@
 
     grid-template-columns: auto;
 
-    grid-template-rows: 120px auto;
+    grid-template-rows: 120px auto 120px;
 
     /* border: 2px dotted purple; */
 
@@ -135,6 +135,27 @@ h1
 
 
 /* End Nav Bar */
+/* ********************** */
+
+/* Footer */
+/* ********************** */
+
+.footer-container
+{
+    grid-row: 3;
+    grid-column: 1;
+
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+
+    background-color: #aaaaaa;
+    border-radius: 1rem;
+    margin: 2rem 0px 1rem 0px;
+}
+
+/* End Footer */
 /* ********************** */
 
 /* Tag Styles */
