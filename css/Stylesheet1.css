@@ -5,7 +5,7 @@
 {
     /* So I think this means 90% of the view width,
     which should be based on the device you're using. */
-    width: 90vw;
+    width: 100vw;
 
     /* I should get away from using pixles, but this will keep
     the grid from being too small */
@@ -88,7 +88,7 @@
     align-items: center;
 
     /* Keeps it off the nav bar a bit :) */
-    margin-top: 1rem;
+    margin-top: 2rem;
 
     width: 100vw;
 }
@@ -131,6 +131,8 @@
 {
     grid-row: 1;
     grid-column: 2;
+
+    width: 85vw;
 
     display: flex;
     align-items: center;
@@ -194,41 +196,44 @@ h1
 
     background-color: #aaaaaa;
     border-radius: 1rem;
-    margin: 2rem 0px 1rem 0px;
+    /* width: 90vw; */
+    margin: 2rem 6rem 1rem 8rem;
 }
 
 /* End Footer */
 /* ********************** */
 
-/* Tag Styles */
+/* Tag Styles, General Tags */
 /* ********************** */
 
-/* h2, p
+#content-box
 {
-    text-align: center;
-    margin: 0px auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
-} */
-
-/* Generally ask about the syntax of child, adjacent, and mixing them together */
-
-.content > ul li, .content a
-{
-    margin: 0px auto 0px auto;
-    width: 80%;
+    background-color: #aaaaaaaa;
+    border-radius: .3rem;
 }
 
-/* can't seem to apply the same settings above to a tags without seperating it? */
-/* .content a
+p, .content > ul li, .content a
 {
-    margin: 0px auto 0px auto;
+    text-align: center;
     width: 80%;
-} */
+    padding: .5rem;
+}
 
 .content > img
 {
-    border-radius: .3rem;
-    width: 80%;
     height: auto;
-    /* margin: 4rem auto 4rem auto; */
 }
+
+#content-style
+{
+    border-radius: .3rem;
+    margin: 2rem 0 2rem 0;
+    width: 80%;
+}
+
+/* End Tag Styles, General Tags */
+/* ********************** */
