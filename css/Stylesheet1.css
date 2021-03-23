@@ -216,7 +216,7 @@ h1
     border-radius: .3rem;
 }
 
-p, .content > ul li, .content a
+p
 {
     text-align: center;
     width: 80%;
