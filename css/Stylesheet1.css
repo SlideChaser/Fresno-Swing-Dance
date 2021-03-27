@@ -89,6 +89,8 @@
     /* border: 2px dotted blue; */
 }
 
+
+
 .content
 {
     /* This is the meat of the site. This is where all the pictures
@@ -98,7 +100,7 @@
     
     display: flex;
 
-    margin-top: .5rem;
+    margin: .5rem 0 3rem 0;
 
     /* For some reason flexbox's default direction is horizontal.
     So in order to stack bits of website you have to set the direction
@@ -111,6 +113,13 @@
     width: 100vw;
 }
 
+.footer-grid
+{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: auto;
+}
+
 /* End Grid Components */
 /* ********************** */
 
@@ -119,19 +128,7 @@
 /* ********************** */
 /* Anything that is inside of the nav bar container lives here. */
 
-.nav-links
-{
-    margin-right: 2rem;
-}
-
-.nav-links ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links ul li
+.nav-links li
 {
     display: inline-block;
     font-family: 'betty_noirregular', Arial, sans-serif;
@@ -150,51 +147,65 @@
 
 .banner
 {
+    /* Position */
     grid-row: 1;
     grid-column: 2;
 
+    height: 75%;
     width: 90%;
 
     display: flex;
+    align-self: center;
     align-items: center;
-
+    /* This is seperating the bits on the right (header)
+    from the bits on the right (links). */
     justify-content: space-between;
 
+    /* Style */
     background-color: #999999dd;
     border-radius: 1rem;
-
-    margin: 5px;
 }
 
 .banner a
 {
+    /* Position */
+    padding: .2rem .2rem .3rem .2rem;
+    margin: .6rem;
+
+    /* Style */
     text-decoration: none;
     color: black;
-    padding: .2rem .2rem .3rem .2rem;
-    margin: 1rem;
 }
 
 .banner a:hover
 {
-    background-color: #880838;
-    border-radius: .1rem;
+    /* Pushes the color outside the word a little bit */
     padding: .2rem .2rem .3rem .2rem;
+
+    /* The perfect FSD color ;P */
+    background-color: #880838;
     color: white;
+    border-radius: .1rem;
 
 }
 
 #current-page
 {
-    background-color: #880838;
-    border-radius: .1rem;
+    /* Keeps the current pages hover active, so you
+    can tell where you are */
+
     padding: .2rem .2rem .3rem .2rem;
+    
+    background-color: #880838;
     color: white;
+    border-radius: .1rem;
 }
 
 
 h1
 {
     margin-left: 1rem;
+
     font-size: 2rem;
 }
 
@@ -206,19 +217,23 @@ h1
 
 .footer-container
 {
+    /* Position */
+    
+    /* Position in the Grid */
     grid-row: 3;
-    grid-column: 1;
+    grid-column: 2;
 
+    /* Flex Position Properties */
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: auto;
     height: 4rem;
 
     background-color: #aaaaaa;
     border-radius: 1rem;
-    /* width: 90vw; */
-    margin: 2rem 6rem 1rem 8rem;
+    width: 90%;
 }
 
 #icons i
