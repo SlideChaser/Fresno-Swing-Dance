@@ -29,7 +29,7 @@
 
     /* I should get away from using pixles, but this will keep
     the grid from being too small */
-    min-width: 500px;
+    min-width: 80rem;
 
     /* <DELETE FLAG> */
     /* Still trying to understand how auto works, so I'm using it
