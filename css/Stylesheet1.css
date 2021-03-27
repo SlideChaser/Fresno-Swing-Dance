@@ -161,7 +161,7 @@
 
     justify-content: space-between;
 
-    background-color: #999999dd;
+    background-color: #aaaaaadd;
     border-radius: 1rem;
 
     margin: 5px;
@@ -239,29 +239,20 @@ h1
 #content-box
 {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 80%;
     text-shadow: .2rem .2rem .5rem black;
     color: white;
     font-size: 1.25rem;
-    background-color: #aaaaaa55;
-    border-radius: .3rem;
-    margin: 1rem 0rem 2rem 0rem;
-}
-
-#hero
-{
-    border-radius: .3rem;
-    margin: .5rem 0 2rem 0;
-    width: 80%;
+    /* background-color: #aaaaaaaa;
+    border-radius: .3rem; */
 }
 
 #content-style
 {
     border-radius: .3rem;
-    margin: 1rem 0 2rem 0;
+    margin: .5rem 0 2rem 0;
     width: 80%;
 }
 
@@ -270,21 +261,22 @@ h1
     height: auto;
 }
 
-#boring-title
-{
-    width: 40%;
-}
-
-#content-box a
-{
-    color: #880838;
-}
-
 h1
 {
     font-family: 'betty_noirregular', Arial, sans-serif;
     font-weight:normal;
     font-style:normal;
+}
+
+h2
+{
+    color: black;
+    font-family: 'betty_noirregular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    text-shadow: .05rem 0px .2rem white;
+    letter-spacing: .3rem;
+    padding: .5rem;
 }
 
 #border
@@ -295,15 +287,11 @@ h1
 p
 {
     text-align: center;
-    text-shadow: 0rem .1rem .2rem black;
     /* width: 80%; */
-    padding: 0rem 1rem 0rem 1rem;
+    /* padding: .5rem; */
 }
 
-#p-note
-{
-    color: white;
-}
+
 
 /* End Tag Styles, General Tags */
 /* ********************** */
