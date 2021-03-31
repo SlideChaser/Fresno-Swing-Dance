@@ -189,18 +189,16 @@
 
 }
 
+/* Keeps the current pages hover active, so you
+can tell where you are */
 #current-page
 {
-    /* Keeps the current pages hover active, so you
-    can tell where you are */
-
     padding: .2rem .2rem .3rem .2rem;
     
     background-color: #880838;
     color: white;
     border-radius: .1rem;
 }
-
 
 h1
 {
@@ -216,9 +214,7 @@ h1
 /* ********************** */
 
 .footer-container
-{
-    /* Position */
-    
+{    
     /* Position in the Grid */
     grid-row: 3;
     grid-column: 2;
@@ -228,12 +224,13 @@ h1
     align-items: center;
     justify-content: center;
 
-    width: auto;
+    /* Size */
+    width: 90%;
     height: 4rem;
 
+    /* Style */
     background-color: #aaaaaa;
     border-radius: 1rem;
-    width: 80%;
 }
 
 #icons i
