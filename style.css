@@ -221,6 +221,9 @@ input[type=submit]:hover {
 .content-box a {
   color: white;
 }
+.content-box h2, .content-box h3, .content-box h5 {
+  margin-bottom: 1rem;
+}
 
 #content-style {
   border-radius: 0.3rem;
