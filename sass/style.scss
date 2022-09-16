@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "betty_noirregular";
-  src: url("./css/bettynoir/bettynoir-webfont.woff2") format("woff2"),
-    url("./css/bettynoir/bettynoir-webfont.woff") format("woff");
+  src: url("./bettynoir/bettynoir-webfont.woff2") format("woff2"),
+    url("./bettynoir/bettynoir-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,6 +12,8 @@
   margin: 0;
   padding: 0;
 }
+
+$fsd-red: #880838;
 
 /* Grid Components */
 /* ********************** */
@@ -22,23 +24,11 @@
 
   grid-template-rows: 120px auto 120px;
 
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/BackgroundNEW.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.nav-grid {
-
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-rows: auto;
-
-  position: sticky;
-  
-  top: 15px;
 }
 
 .content {
@@ -65,77 +55,82 @@
 /* ********************** */
 /* Anything that is inside of the nav bar container lives here. */
 
-.nav-links li {
+.nav-grid {
 
-  display: inline-block;
-  font-family: "betty_noirregular", Arial, sans-serif;
-
-	font-size: 1.8rem;
-}
-
-.logo {
   grid-row: 1;
-  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  grid-template-rows: auto;
 
-  justify-self: center;
-  align-self: center;
+  position: sticky;
+  
+  top: 15px;
+
+
+	.nav-links li {
+	
+		display: inline-block;
+		font-family: "betty_noirregular", Arial, sans-serif;
+	
+		font-size: 1.8rem;
+	}
+	
+	.logo {
+		grid-row: 1;
+		grid-column: 1;
+	
+		justify-self: center;
+		align-self: center;
+	}
+	
+	.banner {
+	
+		grid-row: 1;
+		grid-column: 2;
+	
+		height: 75%;
+	
+		display: flex;
+		align-self: center;
+		align-items: center;
+		justify-content: space-between;
+	
+		background-color: #999999dd;
+		border-radius: 1rem;
+
+		a{
+
+			padding: .3rem;
+			margin: 0.6rem;
+			border-radius: .3rem;
+		
+			text-decoration: none;
+			color: black;
+
+			&:hover{
+			
+				background-color: $fsd-red;
+				color: white;
+			}
+		}
+	}
+
+	.current-page {
+	
+		padding: .5rem;
+	
+		background-color: $fsd-red;
+		color: white;
+	}
+	
+	h1 {
+
+		margin-left: 1rem;
+	
+		font-size: 3rem;
+	}
 }
 
-.banner {
-  /* Position */
-  grid-row: 1;
-  grid-column: 2;
-
-  height: 75%;
-  width: 90%;
-
-  display: flex;
-  align-self: center;
-  align-items: center;
-  /* This is seperating the bits on the right (header)
-    from the bits on the right (links). */
-  justify-content: space-between;
-
-  /* Style */
-  background-color: #999999dd;
-  border-radius: 1rem;
-}
-
-.banner a {
-  /* Position */
-  padding: 0.2rem 0.2rem 0.3rem 0.2rem;
-  margin: 0.6rem;
-
-  /* Style */
-  text-decoration: none;
-  color: black;
-}
-
-.banner a:hover {
-  /* Pushes the color outside the word a little bit */
-  padding: 0.2rem 0.2rem 0.3rem 0.2rem;
-
-  /* The perfect FSD color ;P */
-  background-color: #880838;
-  color: white;
-  border-radius: 0.1rem;
-}
-
-/* Keeps the current pages hover active, so you
-can tell where you are */
-#current-page {
-  padding: 0.2rem 0.2rem 0.3rem 0.2rem;
-
-  background-color: #880838;
-  color: white;
-  border-radius: 0.1rem;
-}
-
-h1 {
-  margin-left: 1rem;
-
-  font-size: 2rem;
-}
 
 /* End Nav Bar */
 /* ********************** */
