@@ -50,11 +50,6 @@
   position: sticky;
   top: 15px;
 }
-.nav-grid .nav-links li {
-  display: inline-block;
-  font-family: "betty_noirregular", Arial, sans-serif;
-  font-size: 1.8rem;
-}
 .nav-grid .logo {
   grid-row: 1;
   grid-column: 1;
@@ -82,6 +77,47 @@
 .nav-grid .banner a:hover {
   background-color: #880838;
   color: white;
+}
+.nav-grid .banner .nav-links li {
+  display: inline-block;
+  font-family: "betty_noirregular", Arial, sans-serif;
+  font-size: 1.8rem;
+}
+@media (max-width: 1700px) {
+  .nav-grid .banner .nav-links {
+    display: none;
+  }
+}
+.nav-grid .banner .nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 7rem;
+  right: 10%;
+  background-color: gray;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.nav-grid .banner .nav-dropdown a {
+  padding: 0.3rem;
+  margin: 0.6rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  color: black;
+}
+.nav-grid .banner .nav-dropdown ul {
+  list-style-type: none;
+}
+.nav-grid .banner .nav-dropdown li {
+  margin: 10px 0;
+}
+.nav-grid .fas {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+@media (min-width: 1700px) {
+  .nav-grid .fas {
+    display: none;
+  }
 }
 .nav-grid .current-page {
   padding: 0.5rem;

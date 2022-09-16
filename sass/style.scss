@@ -66,23 +66,15 @@ $fsd-red: #880838;
   
   top: 15px;
 
-
-	.nav-links li {
-	
-		display: inline-block;
-		font-family: "betty_noirregular", Arial, sans-serif;
-	
-		font-size: 1.8rem;
-	}
-	
 	.logo {
+
 		grid-row: 1;
 		grid-column: 1;
 	
 		justify-self: center;
 		align-self: center;
 	}
-	
+
 	.banner {
 	
 		grid-row: 1;
@@ -112,8 +104,63 @@ $fsd-red: #880838;
 				background-color: $fsd-red;
 				color: white;
 			}
+		}	
+		
+		.nav-links{
+
+			li{
+	
+				display: inline-block;
+				font-family: "betty_noirregular", Arial, sans-serif;
+			
+				font-size: 1.8rem;
+			}
+			
+			
+			@media(max-width: 1700px){
+				
+				display: none;
+			}
+		}
+
+		.nav-dropdown{
+
+			display: none;
+	
+			position: absolute;
+			top: 7rem;
+			right: 10%;
+			
+			background-color: gray;
+	
+			padding: .5rem;
+			border-radius: 1rem;
+	
+			a{
+	
+				padding: .3rem;
+				margin: 0.6rem;
+				border-radius: .3rem;
+			
+				text-decoration: none;
+				color: black;
+			}
+	
+			ul{list-style-type: none;}
+			li{margin: 10px 0;}
 		}
 	}
+
+	.fas{
+		
+		margin-right: 2rem;
+		cursor: pointer;
+
+		@media(min-width: 1700px){
+
+			display: none;
+		}
+	}	
 
 	.current-page {
 	
