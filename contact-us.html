@@ -1,97 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FSD - Contact Us</title>
-    <meta name="discription" content="Swing dancing in Fresno">
-    <link rel="stylesheet" href="./css/stylesheet1.css">
-    <script src="https://kit.fontawesome.com/aebdbe8212.js" crossorigin="anonymous"></script>
-</head>
+    <meta name="discription" content="Swing dancing in Fresno" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/aebdbe8212.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div class="grid">
-        <nav class="nav-grid">
-            <a href="index.html"  class="logo">
-                <img src="./img/fsd-logo.png" alt="fsd-logo" width="100px" height="100px">
-            </a>
+      <nav class="nav-grid">
+        <a href="index.html" class="logo">
+          <img
+            src="./img/fsd-logo.png"
+            alt="fsd-logo"
+            width="100px"
+            height="100px"
+          />
+        </a>
 
-            <div class="banner">
-                <h1>Fresno Swing Dance</h1>
-                <div class="nav-links">
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about-us.html">About Us</a>
-                        </li>
-                        <li>
-                            <a href="lessons-events.html">Lessons & Events</a>
-                        </li>
-                        <li>
-                            <a id="current-page" href="contact-us.html">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="safer-place-policy.html">Safer Place Policy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="banner">
+          <h1>Fresno Swing Dance</h1>
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="lessons-events.html">Lessons & Events</a>
+              </li>
+              <li>
+                <a id="current-page" href="contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="safer-place-policy.html">Code of Conduct</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-        <div class="content">
-            <img id="boring-title" src="./img/contact-title.png" alt="Contact Us">
-            
-            <div id="content-box">
-                <ul>
-                    <li>fresnoswingdance@gmail.com</li>
-                    <li>559-492-6313</li>
-                </ul>
-            </div>
+      <div class="content">
+        <img id="boring-title" src="./img/contact-title.png" alt="Contact Us" />
 
-            <div id="contact-box">
-                <form action="">
-                    <label for="fname">First Name</label>
+				<iframe
+          id="content-style"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51133.06400802962!2d-119.78952995425416!3d36.77496932086403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76a8d4dd50156582!2sCalifornia%20Arts%20Academy!5e0!3m2!1sen!2sus!4v1617069624914!5m2!1sen!2sus"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
 
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    
-                    <label for="lname">Last Name</label>
-                    
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    
-                    <label for="email">Email</label>
-                    
-                    <input type="text" id="email" name="email" placeholder="Email address..">
-                    
-                    <label for="subject">Subject</label>
-                    
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:20rem"></textarea>
-                
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            
+        <div class="content-box">
+          <ul>
+            <li>
+							<a href="mailto:fresnoswingdance@gmail.com">fresnoswingdance@gmail.com</a></li>
+            <li>559-492-6313</li>
+          </ul>
         </div>
 
-        <footer>
-            <div class="footer-grid">
-                <div class="footer-container">
-                    <div id="icons">
-                        <a href="https://www.facebook.com/fresnoswingdance" target="blank">
-                            <i class="fab fa-facebook-square fa-2x"></i>
-                        </a>
-                        <a href="https://www.instagram.com/fresno_swing_dance/" target="blank">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="https://www.youtube.com/user/fresnoswingdance" target="blank">
-                            <i class="fab fa-youtube fa-2x"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="contact-box">
+          <form action="">
+            <label for="fname">First Name</label>
+
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="email">Email</label>
+
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email address.."
+            />
+
+            <label for="subject">Subject</label>
+
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 20rem"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-grid">
+          <div class="footer-container">
+            <div id="icons">
+              <a
+                href="https://www.facebook.com/fresnoswingdance"
+                target="blank"
+              >
+                <i class="fab fa-facebook-square fa-2x"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/fresno_swing_dance/"
+                target="blank"
+              >
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/user/fresnoswingdance"
+                target="blank"
+              >
+                <i class="fab fa-youtube fa-2x"></i>
+              </a>
             </div>
-        </footer>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
