@@ -7,10 +7,6 @@
     <title>FSD - Schedule</title>
     <meta name="discription" content="Swing dancing in Fresno" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/aebdbe8212.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
 
   <body>
@@ -30,15 +26,13 @@
           <div class="nav-links">
             <ul>
               <li>
-                <a href="index.html">Home</a>
+                <a class="current-page" href="index.html">Home</a>
               </li>
               <li>
                 <a href="about-us.html">About Us</a>
               </li>
               <li>
-                <a class="current-page" href="lessons-events.html"
-                  >Lessons & Events</a
-                >
+                <a href="lessons-events.html">Lessons & Events</a>
               </li>
               <li>
                 <a href="contact-us.html">Contact Us</a>
@@ -48,6 +42,26 @@
               </li>
             </ul>
           </div>
+					<i class="fas fa-bars fa-lg" id="menu_bars"></i>
+					<div class="nav-dropdown" id="nav_dropdown">
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about-us.html">About Us</a>
+							</li>
+							<li>
+								<a class="current-page" href="lessons-events.html">Lessons & Events</a>
+							</li>
+							<li>
+								<a href="contact-us.html">Contact Us</a>
+							</li>
+							<li>
+								<a href="safer-place-policy.html">Code of Conduct</a>
+							</li>
+						</ul>
+					</div>
         </div>
       </nav>
 
@@ -56,23 +70,40 @@
 
         <div class="content-box extra-padding">
 					<h3>Take Your First Class</h3>
-					<h5>Drop in, no partner required</h5>
+					<p>Have you always wanted to learn how to swing dance but didn't know where to start?? Well, you have come to the right place!
+					We'll teach you the steps you need to know to have a good time.</p><br>
+					<p>No partner? No problem. Our classes are social and rotate partners and you'll meet a ton of cool, new people. Do you have a partner and only want to dance with them? That's cool with us too. When the class rotates just stay with your partner.</p><br>
 					<p>Be sure to arrive at least 15 minutes early.</p>
 					<p>Dress code is casual.</p>
 					<p>Wear shoes that don’t fall off your feet.</p>
 					<br>
-          <h2>Full Swing Tuesdays</h2>
+          <h2>Tuesday Night Swing</h2>
           <p>
-            7:15-8:15pm Lessons
+            Drop-in Beginning 6-Count Swing
+						<br>
+            7:30-8:30pm Lesson
             <br />
             8:30-9:30pm Social Dance
-            <br />
-            DROP IN! NO PARTNER REQUIRED!
-            <br />
-            $10 w/ lesson ($7 dance only) Students w/ ID $8/$5
+          </p>
+					<br>
+					<h2>Pricing</h2>
+					<p>
+            $10 includes the Drop-in Beginning 6-Count lesson and the social dance to follow 
+						<br>
+						We also have punchcards for purchase: $35 for 4 weeks (expires in 3 months)
+						<br>
+						For completed punchcards, we will have a raffle for a free entry for a Tuesday Night Swing!
             <br />
             At California Arts Academy on Blackstone!
           </p>
+					<br>
+					<h2>COVID-19 SAFETY MEASURES</h2>
+					<p>
+						We welcome all those who want to attend regardless of their vaccination status.<br>
+						However, we still strongly encourage everyone to mask up (preferably with N95’s) while partner dancing.<br> Be kind and compassionate to people’s choices.<br> We also remind people to continue practicing good hygiene; washing hands (hand sanitizer is provided), coughing into elbows, staying home when sick, etc. 
+						<br>
+						The pandemic is not over, but we can dance if we do it safely. So, let’s dance!
+					</p>
         </div>
 
 				<iframe
@@ -83,38 +114,6 @@
           allowfullscreen=""
           loading="lazy"
         ></iframe>
-
-        <!-- <img id="content-style" src="./img/art-hop.jpg" alt="Dancing" />
-
-        <div class="content-box">
-          <p>
-            Lindy Hop at Art Hop with Fresno Swing Dance! Free dancing at the
-            new Cultural Arts Park in
-            <br />
-            downtown Fresno. Every FIRST THURSDAY of the month, from 7:00-9:00pm
-            <br /><br />
-            What to expect:
-          </p>
-          <ul>
-            <li>Swing music</li>
-            <li>Swing dancing</li>
-            <li>Food trucks</li>
-            <li>Nearby art venues</li>
-            <li>Free parking</li>
-          </ul>
-          <p>
-            ArtHop takes place the first Thursday Evening (5-8PM) of every month
-            in downtown Fresno.
-            <br />
-            There are over 35 listed art/music venues that participate. Several
-            venues are within walking
-            <br />
-            distance of each other. To learn more, visit
-            <a href="http://fresnoartscouncil.org/arthop/" target="blank"
-              >Fresno Arts Council</a
-            >
-          </p>
-        </div> -->
 
         <img id="content-style" src="./img/swing-shift.jpg" alt="" />
         <div class="content-box">
@@ -146,29 +145,30 @@
       <footer>
         <div class="footer-grid">
           <div class="footer-container">
-            <div id="icons">
-              <a
-                href="https://www.facebook.com/fresnoswingdance"
-                target="blank"
-              >
-                <i class="fab fa-facebook-square fa-2x"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/fresno_swing_dance/"
-                target="blank"
-              >
-                <i class="fab fa-instagram fa-2x"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/user/fresnoswingdance"
-                target="blank"
-              >
-                <i class="fab fa-youtube fa-2x"></i>
-              </a>
-            </div>
+						<a
+							href="https://www.facebook.com/fresnoswingdance"
+							target="blank"
+						>
+							<i class="fab fa-facebook-square fa-2x"></i>
+						</a>
+						<a
+							href="https://www.instagram.com/fresno_swing_dance/"
+							target="blank"
+						>
+							<i class="fab fa-instagram fa-2x"></i>
+						</a>
+						<a
+							href="https://www.youtube.com/user/fresnoswingdance"
+							target="blank"
+						>
+							<i class="fab fa-youtube fa-2x"></i>
+						</a>
           </div>
         </div>
       </footer>
     </div>
+
+		<script src="./js/javascript.js"></script>
+		<script src="https://kit.fontawesome.com/aebdbe8212.js" crossorigin="anonymous"></script>
   </body>
 </html>
