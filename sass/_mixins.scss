@@ -1,0 +1,10 @@
+@mixin extra-large($prop, $val) {
+  @media(max-width: 1700px) {$prop: $val;}
+}
+
+// font sizes
+$xl-font: 2rem;
+$l-font: 1.4rem;
+$m-font: 1.3rem;
+$sm-font: 1.1rem;
+$xs-font: .8rem;

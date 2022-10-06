@@ -11,14 +11,15 @@
 
   <body>
     <div class="grid">
-      <nav class="nav-grid">
+			<nav class="nav-grid">
         <a href="index.html" class="logo">
-          <img
-            src="./img/fsd-logo.png"
-            alt="fsd-logo"
-            width="100px"
-            height="100px"
-          />
+          <div class="logo-wrapper">
+            <img
+              id="site_logo"
+              src="./img/fsd-logo.png"
+              alt="fsd-logo"
+            />
+          </div>
         </a>
 
         <div class="banner">
@@ -26,7 +27,7 @@
           <div class="nav-links">
             <ul>
               <li>
-                <a class="current-page" href="index.html">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <a href="about-us.html">About Us</a>
@@ -35,18 +36,18 @@
                 <a href="lessons-events.html">Lessons & Events</a>
               </li>
               <li>
-                <a href="contact-us.html">Contact Us</a>
+                <a class="current-page" href="contact-us.html">Contact Us</a>
               </li>
               <li>
-                <a href="safer-place-policy.html">Code of Conduct</a>
+                <a href="code-of-conduct.html">Code of Conduct</a>
               </li>
             </ul>
           </div>
-					<i class="fas fa-bars fa-lg" id="menu_bars"></i>
+					<i class="fas fa-bars fa-lg" id="menu_button"></i>
 					<div class="nav-dropdown" id="nav_dropdown">
 						<ul>
 							<li>
-								<a href="index.html">Home</a>
+								<a  href="index.html">Home</a>
 							</li>
 							<li>
 								<a href="about-us.html">About Us</a>
@@ -58,18 +59,18 @@
 								<a class="current-page" href="contact-us.html">Contact Us</a>
 							</li>
 							<li>
-								<a href="safer-place-policy.html">Code of Conduct</a>
+								<a href="code-of-conduct.html">Code of Conduct</a>
 							</li>
 						</ul>
 					</div>
         </div>
       </nav>
 
-      <div class="content">
-        <img id="boring-title" src="./img/contact-title.png" alt="Contact Us" />
+      <div class="content" id="content_click">
+        <img class="boring-title" src="./img/contact-title.png" alt="Contact Us" />
 
 				<iframe
-          id="content-style"
+          class="content-style"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51133.06400802962!2d-119.78952995425416!3d36.77496932086403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76a8d4dd50156582!2sCalifornia%20Arts%20Academy!5e0!3m2!1sen!2sus!4v1617069624914!5m2!1sen!2sus"
           height="450"
           style="border: 0"
@@ -78,14 +79,15 @@
         ></iframe>
 
         <div class="content-box">
-          <ul>
+          <ul style="font-size: initial;">
             <li>
-							<a href="mailto:fresnoswingdance@gmail.com">fresnoswingdance@gmail.com</a></li>
-            <li>559-492-6313</li>
+							<a href="mailto:fresnoswingdance@gmail.com">fresnoswingdance@gmail.com</a>
+            </li>
+            <li><a href="tel: 559-492-6313">559-492-6313</a></li>
           </ul>
         </div>
 
-        <div id="contact-box">
+        <!-- <div class="contact-box">
           <form action="">
             <label for="fname">First Name</label>
 
@@ -125,34 +127,23 @@
 
             <input type="submit" value="Submit" />
           </form>
-        </div>
+        </div> -->
       </div>
 
-      <footer>
-        <div class="footer-grid">
-          <div class="footer-container">
-						<a
-							href="https://www.facebook.com/fresnoswingdance"
-							target="blank"
-						>
-							<i class="fab fa-facebook-square fa-2x"></i>
-						</a>
-						<a
-							href="https://www.instagram.com/fresno_swing_dance/"
-							target="blank"
-						>
-							<i class="fab fa-instagram fa-2x"></i>
-						</a>
-						<a
-							href="https://www.youtube.com/user/fresnoswingdance"
-							target="blank"
-						>
-							<i class="fab fa-youtube fa-2x"></i>
-						</a>
-          </div>
-        </div>
-      </footer>
+      <footer class="footer-cell">
+				<a href="https://www.facebook.com/fresnoswingdance" target="blank">
+					<i class="fab fa-facebook-square fa-2x"></i>
+				</a>
+				<a href="https://www.instagram.com/fresno_swing_dance/" target="blank">
+					<i class="fab fa-instagram fa-2x"></i>
+				</a>
+				<a href="https://www.youtube.com/user/fresnoswingdance" target="blank">
+					<i class="fab fa-youtube fa-2x"></i>
+				</a>
+			</footer>
     </div>
+
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 		<script src="./js/javascript.js"></script>
 		<script src="https://kit.fontawesome.com/aebdbe8212.js" crossorigin="anonymous"></script>

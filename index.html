@@ -13,12 +13,13 @@
     <div class="grid">
       <nav class="nav-grid">
         <a href="index.html" class="logo">
-          <img
-            src="./img/fsd-logo.png"
-            alt="fsd-logo"
-            width="100px"
-            height="100px"
-          />
+          <div class="logo-wrapper">
+            <img
+              id="site_logo"
+              src="./img/fsd-logo.png"
+              alt="fsd-logo"
+            />
+          </div>
         </a>
 
         <div class="banner">
@@ -38,11 +39,11 @@
                 <a href="contact-us.html">Contact Us</a>
               </li>
               <li>
-                <a href="safer-place-policy.html">Code of Conduct</a>
+                <a href="code-of-conduct.html">Code of Conduct</a>
               </li>
             </ul>
           </div>
-					<i class="fas fa-bars fa-lg" id="menu_bars"></i>
+					<i class="fas fa-bars fa-lg" id="menu_button"></i>
 					<div class="nav-dropdown" id="nav_dropdown">
 						<ul>
 							<li>
@@ -58,53 +59,38 @@
 								<a href="contact-us.html">Contact Us</a>
 							</li>
 							<li>
-								<a href="safer-place-policy.html">Code of Conduct</a>
+								<a href="code-of-conduct.html">Code of Conduct</a>
 							</li>
 						</ul>
 					</div>
         </div>
       </nav>
 
-      <div class="content">
+      <div class="content" id="content_click">
         <img class="hero" src="./img/hero.jpg" alt="Dancing" />
-
-        <img id="content-style" src="./img/home-title.png" alt="" />
+        <img class="content-style" src="./img/home-title.png" alt="" />
 
 				<!-- fix this iframe so it doesn't autoplay?? -->
-        <!-- <iframe
-          width="675"
-          height="380"
-          src="https://www.youtube.com/embed/umHKaT3bdZw?&autoplay=1&muted=1&loop=1&playlist=umHKaT3bdZw"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe> -->
+				<div class="gen-box">
+					<iframe
+						class="youtube" src="https://www.youtube.com/embed/umHKaT3bdZw?&rel=0&autoplay=1&mute=1&loop=1&playlist=umHKaT3bdZw"
+						frameborder="0"
+						allowfullscreen
+					></iframe>
+				</div>
       </div>
 
-      <footer>
-        <div class="footer-grid">
-          <div class="footer-container">
-						<a
-							href="https://www.facebook.com/fresnoswingdance"
-							target="blank"
-						>
-							<i class="fab fa-facebook-square fa-2x"></i>
-						</a>
-						<a
-							href="https://www.instagram.com/fresno_swing_dance/"
-							target="blank"
-						>
-							<i class="fab fa-instagram fa-2x"></i>
-						</a>
-						<a
-							href="https://www.youtube.com/user/fresnoswingdance"
-							target="blank"
-						>
-							<i class="fab fa-youtube fa-2x"></i>
-						</a>
-          </div>
-        </div>
-      </footer>
+      <footer class="footer-cell">
+				<a href="https://www.facebook.com/fresnoswingdance" target="blank">
+					<i class="fab fa-facebook-square fa-2x"></i>
+				</a>
+				<a href="https://www.instagram.com/fresno_swing_dance/" target="blank">
+					<i class="fab fa-instagram fa-2x"></i>
+				</a>
+				<a href="https://www.youtube.com/user/fresnoswingdance" target="blank">
+					<i class="fab fa-youtube fa-2x"></i>
+				</a>
+			</footer>
     </div>
 
 		<script src="./js/javascript.js"></script>

@@ -13,12 +13,13 @@
     <div class="grid">
       <nav class="nav-grid">
         <a href="index.html" class="logo">
-          <img
-            src="./img/fsd-logo.png"
-            alt="fsd-logo"
-            width="100px"
-            height="100px"
-          />
+          <div class="logo-wrapper">
+            <img
+              id="site_logo"
+              src="./img/fsd-logo.png"
+              alt="fsd-logo"
+            />
+          </div>
         </a>
 
         <div class="banner">
@@ -26,23 +27,23 @@
           <div class="nav-links">
             <ul>
               <li>
-                <a class="current-page" href="index.html">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <a href="about-us.html">About Us</a>
               </li>
               <li>
-                <a href="lessons-events.html">Lessons & Events</a>
+                <a class="current-page" href="lessons-events.html">Lessons & Events</a>
               </li>
               <li>
                 <a href="contact-us.html">Contact Us</a>
               </li>
               <li>
-                <a href="safer-place-policy.html">Code of Conduct</a>
+                <a href="code-of-conduct.html">Code of Conduct</a>
               </li>
             </ul>
           </div>
-					<i class="fas fa-bars fa-lg" id="menu_bars"></i>
+					<i class="fas fa-bars fa-lg" id="menu_button"></i>
 					<div class="nav-dropdown" id="nav_dropdown">
 						<ul>
 							<li>
@@ -58,15 +59,15 @@
 								<a href="contact-us.html">Contact Us</a>
 							</li>
 							<li>
-								<a href="safer-place-policy.html">Code of Conduct</a>
+								<a href="code-of-conduct.html">Code of Conduct</a>
 							</li>
 						</ul>
 					</div>
         </div>
       </nav>
 
-      <div class="content">
-        <img id="boring-title" src="./img/lessons-title.png" alt="" />
+      <div class="content" id="content_click">
+        <img class="boring-title" src="./img/lessons-title.png" alt="" />
 
         <div class="content-box extra-padding">
 					<h3>Take Your First Class</h3>
@@ -107,7 +108,7 @@
         </div>
 
 				<iframe
-          id="content-style"
+          class="content-style"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51133.06400802962!2d-119.78952995425416!3d36.77496932086403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76a8d4dd50156582!2sCalifornia%20Arts%20Academy!5e0!3m2!1sen!2sus!4v1617069624914!5m2!1sen!2sus"
           height=""
           style="border: 0"
@@ -115,7 +116,7 @@
           loading="lazy"
         ></iframe>
 
-        <img id="content-style" src="./img/swing-shift.jpg" alt="" />
+        <img class="content-style" src="./img/swing-shift.jpg" alt="" />
         <div class="content-box">
           <p>Fresno Swing Dance Community brings you The Swing Shift at River Park every 2nd & 4th Mondays for free</p>
 					<p>dancing at River Park in front of Teazer World Tea Market during a part of "Get Moving Mondays".</p>
@@ -123,49 +124,36 @@
 					<p>Swing! This is a family friendly event. We hope to see you out there!</p>
         </div>
 
-				<iframe id="content-style" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.7234369627445!2d-119.791022084355!3d36.84909907264448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809442a753d0a565%3A0x27e24daa50c54d52!2sTeazer%20World%20Tea%20Market%20-%20River%20Park!5e0!3m2!1sen!2sus!4v1663300054841!5m2!1sen!2sus" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe class="content-style" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.7234369627445!2d-119.791022084355!3d36.84909907264448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809442a753d0a565%3A0x27e24daa50c54d52!2sTeazer%20World%20Tea%20Market%20-%20River%20Park!5e0!3m2!1sen!2sus!4v1663300054841!5m2!1sen!2sus" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <img id="boring-title" src="./img/calendar-title.png" alt="Calendar" />
+        <img class="boring-title" src="./img/calendar-title.png" alt="Calendar" />
         <div class="content-box">
           <p>
             View our community calendar of dance events we recommend for swing
             dancers/enthusiasts
           </p>
         </div>
-        <iframe
-          src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cWFscm5xbGhiM2ExZXJubm5mOWY0aWpqYTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2333B679&amp;color=%238E24AA&amp;color=%233F51B5"
-          style="border: solid 1px #777"
-          width="800"
-          height="600"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
+				<div class="gen-box">
+					<iframe
+						class="calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cWFscm5xbGhiM2ExZXJubm5mOWY0aWpqYTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2333B679&amp;color=%238E24AA&amp;color=%233F51B5"
+						style="border: solid 1px #777"
+						frameborder="0"
+						scrolling="no"
+					></iframe>
+				</div>
       </div>
 
-      <footer>
-        <div class="footer-grid">
-          <div class="footer-container">
-						<a
-							href="https://www.facebook.com/fresnoswingdance"
-							target="blank"
-						>
-							<i class="fab fa-facebook-square fa-2x"></i>
-						</a>
-						<a
-							href="https://www.instagram.com/fresno_swing_dance/"
-							target="blank"
-						>
-							<i class="fab fa-instagram fa-2x"></i>
-						</a>
-						<a
-							href="https://www.youtube.com/user/fresnoswingdance"
-							target="blank"
-						>
-							<i class="fab fa-youtube fa-2x"></i>
-						</a>
-          </div>
-        </div>
-      </footer>
+      <footer class="footer-cell">
+				<a href="https://www.facebook.com/fresnoswingdance" target="blank">
+					<i class="fab fa-facebook-square fa-2x"></i>
+				</a>
+				<a href="https://www.instagram.com/fresno_swing_dance/" target="blank">
+					<i class="fab fa-instagram fa-2x"></i>
+				</a>
+				<a href="https://www.youtube.com/user/fresnoswingdance" target="blank">
+					<i class="fab fa-youtube fa-2x"></i>
+				</a>
+			</footer>
     </div>
 
 		<script src="./js/javascript.js"></script>

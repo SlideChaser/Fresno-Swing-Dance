@@ -10,7 +10,15 @@
   padding: 0;
 }
 
-body {
+/* Grid Components */
+/* ********************** */
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 120px auto 60px;
+  grid-template-areas: "header" "content" "footer";
+  row-gap: 1rem;
+  min-height: 100vh;
   background-image: url("../img/BackgroundNEW.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -18,15 +26,9 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Grid Components */
+/* Nav Bar */
 /* ********************** */
-.grid {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 120px auto 120px;
-  min-height: 100vh;
-}
-
+/* Anything that is inside of the nav bar container lives here. */
 .nav-grid {
   display: grid;
   grid-template-columns: 1fr 80% 1fr;
@@ -34,11 +36,34 @@ body {
   position: sticky;
   top: 0px;
 }
+.nav-grid #site_logo {
+  max-width: 100%;
+  max-height: 100%;
+}
 .nav-grid .logo {
   grid-row: 1;
   grid-column: 1;
   justify-self: center;
   align-self: center;
+}
+@media (max-width: 810px) {
+  .nav-grid .logo {
+    align-self: initial;
+  }
+}
+.nav-grid .logo-wrapper {
+  background-image: url("../img/fsd-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100px;
+  width: 100px;
+  margin: 0.5rem;
+  height: auto;
+}
+@media (max-width: 810px) {
+  .nav-grid .logo-wrapper {
+    width: calc(12vw + 1rem);
+  }
 }
 .nav-grid .banner {
   grid-row: 1;
@@ -51,9 +76,9 @@ body {
   background-color: rgba(153, 153, 153, 0.8666666667);
   border-radius: 1rem;
 }
-@media (max-width: 400px) {
-  .nav-grid .banner h1 {
-    font-size: 2rem;
+@media (max-width: 430px) {
+  .nav-grid .banner {
+    margin-right: 1rem;
   }
 }
 .nav-grid .banner a {
@@ -67,12 +92,51 @@ body {
   background-color: #880838;
   color: white;
 }
+.nav-grid .banner h1 {
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+@media (max-width: 1700px) {
+  .nav-grid .banner h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-grid .banner h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .nav-grid .banner h1 {
+    font-size: 1.2rem;
+  }
+}
 .nav-grid .banner .nav-links li {
   display: inline-block;
   font-family: "betty_noirregular", Arial, sans-serif;
   font-size: 1.8rem;
 }
-@media (max-width: 1700px) {
+@media (max-width: 1530px) {
+  .nav-grid .banner .nav-links li {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1272px) {
+  .nav-grid .banner .nav-links li {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-grid .banner .nav-links li {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-grid .banner .nav-links li {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1000px) {
   .nav-grid .banner .nav-links {
     display: none;
   }
@@ -103,7 +167,7 @@ body {
   margin-right: 2rem;
   cursor: pointer;
 }
-@media (min-width: 1700px) {
+@media (min-width: 1000px) {
   .nav-grid .fas {
     display: none;
   }
@@ -113,16 +177,13 @@ body {
   background-color: #880838;
   color: white;
 }
-.nav-grid h1 {
-  margin-left: 1rem;
-  font-size: 3rem;
-}
 
+/* End Nav Bar */
+/* ********************** */
 .content {
   grid-row: 2;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 0 3rem 0;
   align-items: center;
 }
 .content .hero {
@@ -135,31 +196,69 @@ body {
     width: 100%;
   }
 }
+.content .gen-box {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+.content .gen-box .calendar {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.content .gen-box .youtube {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.content .gen-box .document {
+  max-width: 850px;
+}
+.content .content-box {
+  /* Positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  /* Style */
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.75rem;
+  line-height: 2.275rem;
+  background-color: rgba(102, 102, 102, 0.8666666667);
+  border-radius: 0.3rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 1rem 0rem 1rem 0rem;
+}
+.content .content-box .band {
+  font-style: italic;
+}
+.content .content-box a {
+  color: white;
+}
+.content .content-box h2, .content .content-box h3, .content .content-box h5 {
+  margin-bottom: 1rem;
+}
+.content .content-style {
+  border-radius: 0.3rem;
+  margin: 1rem 0 1rem 0;
+  width: 80%;
+}
 
 /* End Grid Components */
 /* ********************** */
-/* Nav Bar */
-/* ********************** */
-/* Anything that is inside of the nav bar container lives here. */
-/* End Nav Bar */
-/* ********************** */
 /* Footer */
 /* ********************** */
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  grid-template-rows: auto;
-}
-.footer-grid .footer-container {
-  grid-row: 3;
-  grid-column: 2;
-  padding: 0.5rem 0;
+.footer-cell {
+  grid-area: footer;
+  padding: 1rem 0;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   background-color: #aaaaaa;
   border-radius: 1rem;
 }
-.footer-grid .footer-container a {
+.footer-cell a {
   color: black;
 }
 
@@ -196,7 +295,7 @@ input[type=submit]:hover {
   background-color: #880838;
 }
 
-#contact-box {
+.contact-box {
   /* Positioning */
   display: flex;
   flex-direction: column;
@@ -217,46 +316,8 @@ input[type=submit]:hover {
 /* ********************** */
 /* Tag Styles, General Tags */
 /* ********************** */
-.content-box {
-  /* Positioning */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  /* Style */
-  text-shadow: 0.2rem 0.2rem 0.5rem black;
-  color: white;
-  font-weight: bolder;
-  font-size: 1.75rem;
-  line-height: 2.275rem;
-  background-color: rgba(102, 102, 102, 0.8666666667);
-  border-radius: 0.3rem;
-  margin: 1rem 0rem 1rem 0rem;
-  padding: 1rem 0rem 1rem 0rem;
-}
-.content-box .band {
-  font-style: italic;
-}
-.content-box a {
-  color: white;
-}
-.content-box h2, .content-box h3, .content-box h5 {
-  margin-bottom: 1rem;
-}
-
-#content-style {
-  border-radius: 0.3rem;
-  margin: 1rem 0 1rem 0;
-  width: 80%;
-}
-
-#boring-title {
+.boring-title {
   width: 40%;
-}
-
-#content-box a {
-  color: #880838;
 }
 
 #p-note {
@@ -269,7 +330,7 @@ h1 {
   font-style: normal;
 }
 
-h4 {
+h4, p {
   margin: 0rem;
 }
 
@@ -277,7 +338,6 @@ p {
   text-align: center;
   text-shadow: 0rem 0.1rem 0.2rem black;
   padding: 0rem 1rem 0rem 1rem;
-  margin: 0px;
 }
 
 /* End Tag Styles, General Tags */

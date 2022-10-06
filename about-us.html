@@ -11,14 +11,15 @@
 
   <body>
     <div class="grid">
-      <nav class="nav-grid">
+			<nav class="nav-grid">
         <a href="index.html" class="logo">
-          <img
-            src="./img/fsd-logo.png"
-            alt="fsd-logo"
-            width="100px"
-            height="100px"
-          />
+          <div class="logo-wrapper">
+            <img
+              id="site_logo"
+              src="./img/fsd-logo.png"
+              alt="fsd-logo"
+            />
+          </div>
         </a>
 
         <div class="banner">
@@ -26,10 +27,10 @@
           <div class="nav-links">
             <ul>
               <li>
-                <a class="current-page" href="index.html">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="about-us.html">About Us</a>
+                <a class="current-page" href="about-us.html">About Us</a>
               </li>
               <li>
                 <a href="lessons-events.html">Lessons & Events</a>
@@ -38,11 +39,11 @@
                 <a href="contact-us.html">Contact Us</a>
               </li>
               <li>
-                <a href="safer-place-policy.html">Code of Conduct</a>
+                <a href="code-of-conduct.html">Code of Conduct</a>
               </li>
             </ul>
           </div>
-					<i class="fas fa-bars fa-lg" id="menu_bars"></i>
+					<i class="fas fa-bars fa-lg" id="menu_button"></i>
 					<div class="nav-dropdown" id="nav_dropdown">
 						<ul>
 							<li>
@@ -58,69 +59,53 @@
 								<a href="contact-us.html">Contact Us</a>
 							</li>
 							<li>
-								<a href="safer-place-policy.html">Code of Conduct</a>
+								<a href="code-of-conduct.html">Code of Conduct</a>
 							</li>
 						</ul>
 					</div>
         </div>
       </nav>
 
-      <div class="content">
-        <img id="boring-title" src="./img/about-us.png" alt="" />
+      <div class="content" id="content_click">
+        <img class="boring-title" src="./img/about-us.png" alt="" />
         <div class="content-box">
           <p>
             Fresno Swing Dance is local non-profit designed to create a comfortable community for swing dancing in the Central Valley.  We enjoy dancing a variety of swing styles such as Balboa and Charleston but have a fondness for Lindy Hop.   We welcome dancers no matter their experience level to join our scene so they can share in the fun and joy of swing dance. 
           </p>
         </div>
 
-        <img id="content-style" src="./img/About_Us_Now_ThenNEW.png" alt="" />
+        <img class="content-style" src="./img/About_Us_Now_ThenNEW.png" alt="" />
         <div class="content-box">
 					<p>
 						Fresno Swing Dance (FSD) was established in 2009 by Chris Pluhar and Kellie Townsend.  After moving from Santa Cruz, they realized they needed to create a local scene in order to continue dancing.  What started as a class of 3 at California State University, Fresno turned into a bustling scene of 60 after many years of Chris’ dedicated leadership.  Through patient teaching and promotion of a fun yet casual environment, the group grew to include dedicated volunteers and a committed group of dancers.
-					</p>
-					<br>
-					<p>
+            <br>
+            <br>
 						The group’s love of dance and swing music led to opportunities to dance at local events throughout the valley.  For example, FSD provided entertainment for the Underground Supper Club at Chandler Airport and for the 100th anniversary of Kearny Mansion.  For each, dancers had the opportunity dress up in period clothing and dance in unique locations while supporting local organizations.  In 2019, Fresno Swing Dance celebrated their 10th anniversary with a huge bash at California Arts Academy’s Severance location.   Everyone wore their finest and danced the night away to a live band.   However, this group has also enjoyed smaller events at The Fresno County Public Library, Art Hop, Gazebo Gardens, and the Clovis Farmers Market.
-					</p>
-					<br>
-					<p>
+            <br>
+            <br>
 						Once people get a taste of the community at Fresno Swing Dance in combination with the creativity and thrill of dancing, it’s hard to stop.  The organization is grateful to the many volunteers who teach, lead, support, and welcome dancers at a variety of events.  Without them, the group would never have blossomed into what it is today.  With their support, Fresno Swing Dance can continue be a place for people to discover the joy of swing dance.
-					</p>
-					<br>
-          <p>
+            <br>
+            <br>
             Check out this article from Mallory Moad, lead singer from the local band <span class="band">Scats on the Sly</span>
           </p>
 					<a href="https://kingsriverlife.com/07/29/fresno-swing-dance/" target="blank">Kings River Life Article</a>
         </div>
         <!-- This video is too big for GitHub, Save for later ;P -->
-        <!-- <video id="content-style" src="./video/runaround-sue.MP4" autoplay muted controls></video>
+        <!-- <video class="content-style" src="./video/runaround-sue.MP4" autoplay muted controls></video>
             <p id="p-note">Runaround Sue -Dion</p> -->
       </div>
 
-      <footer>
-        <div class="footer-grid">
-          <div class="footer-container">
-						<a
-							href="https://www.facebook.com/fresnoswingdance"
-							target="blank"
-						>
-							<i class="fab fa-facebook-square fa-2x"></i>
-						</a>
-						<a
-							href="https://www.instagram.com/fresno_swing_dance/"
-							target="blank"
-						>
-							<i class="fab fa-instagram fa-2x"></i>
-						</a>
-						<a
-							href="https://www.youtube.com/user/fresnoswingdance"
-							target="blank"
-						>
-							<i class="fab fa-youtube fa-2x"></i>
-						</a>
-          </div>
-        </div>
-      </footer>
+      <footer class="footer-cell">
+				<a href="https://www.facebook.com/fresnoswingdance" target="blank">
+					<i class="fab fa-facebook-square fa-2x"></i>
+				</a>
+				<a href="https://www.instagram.com/fresno_swing_dance/" target="blank">
+					<i class="fab fa-instagram fa-2x"></i>
+				</a>
+				<a href="https://www.youtube.com/user/fresnoswingdance" target="blank">
+					<i class="fab fa-youtube fa-2x"></i>
+				</a>
+			</footer>
     </div>
 
 		<script src="./js/javascript.js"></script>
