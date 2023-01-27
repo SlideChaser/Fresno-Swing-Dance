@@ -238,6 +238,14 @@
   margin-bottom: 1rem;
   text-align: center;
 }
+.content .content-box h2 {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .content .content-box h2 {
+    font-size: 2rem;
+  }
+}
 .content .content-style {
   border-radius: 0.3rem;
   margin: 1rem 0 1rem 0;
