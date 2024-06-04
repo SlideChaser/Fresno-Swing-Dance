@@ -234,9 +234,12 @@
   color: white;
   font-size: 1.5rem;
 }
-.content .content-box h2, .content .content-box h3, .content .content-box h5 {
+.content .content-box h1, .content .content-box h2, .content .content-box h5 {
   margin-bottom: 1rem;
   text-align: center;
+}
+.content .content-box h3 {
+  margin: 1rem 0;
 }
 .content .content-box h2 {
   font-size: 3rem;
@@ -245,6 +248,12 @@
   .content .content-box h2 {
     font-size: 2rem;
   }
+}
+.content .content-box span {
+  text-decoration: underline;
+}
+.content .content-box li {
+  margin: 0.5rem 0;
 }
 .content .content-style {
   border-radius: 0.3rem;
@@ -345,6 +354,10 @@ p {
   text-align: center;
   text-shadow: 0rem 0.1rem 0.2rem black;
   padding: 0rem 1rem 0rem 1rem;
+}
+
+ul {
+  padding: 0 2rem;
 }
 
 /* End Tag Styles, General Tags */
